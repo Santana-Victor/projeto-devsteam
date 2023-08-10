@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --bg-header: #181a21;
+  --bg-input: #316282;
+  --txt-color: #ffffff;
+  --color-placeholder: #c7c7c7;
+}
+
+html,
+body {
+  background-color: #1b2838;
+  color: var(--txt-color);
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .icon_cart {
+    width: 30px;
+    height: auto;
+  }
+}

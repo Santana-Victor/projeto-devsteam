@@ -1,0 +1,15 @@
+.input {
+  background-color: var(--bg-input);
+  color: var(--txt-color);
+  padding: 10px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+  font-style: italic;
+}
+
+.input.full {
+  width: 100%;
+}
