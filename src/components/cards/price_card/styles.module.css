@@ -1,0 +1,38 @@
+.price_card {
+  display: flex;
+  margin: 15px 0;
+  background-color: var(--bg-price-card);
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px;
+  background-color: var(--bg-discount);
+  color: var(--txt-color-secundary);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+  padding: 5px;
+}
+
+.fullprice {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: var(--txt-fullprice);
+}
+
+.discount_price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--txt-color-secundary);
+}

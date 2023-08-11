@@ -3,14 +3,20 @@
 :root {
   --bg-header: #181a21;
   --bg-input: #316282;
-  --txt-color: #ffffff;
-  --color-placeholder: #c7c7c7;
+  --bg-price-card: #344654;
+  --bg-discount: #4c6b22;
+  --bg-button: #549300;
+  --bg-button-hover: #518f00;
+  --bg-game-card: #2983aa;
+  --txt-fullprice: #a8a8a8;
+  --txt-color-primary: #ffffff;
+  --txt-color-secundary: #beeb14;
+  --txt-color-tertiary: #c7c7c7;
 }
 
-html,
 body {
   background-color: #1b2838;
-  color: var(--txt-color);
+  color: var(--txt-color-primary);
   font-family: "Inter", sans-serif;
 }
 
