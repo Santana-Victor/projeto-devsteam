@@ -9,6 +9,8 @@ export default function GamesOffer() {
     <div className={styles.container}>
       {informationsDiscountGames.map((game) => (
         <SaleCard
+          id={game.id}
+          title={game.title}
           src={game.src}
           alt={game.alt}
           width={game.width}

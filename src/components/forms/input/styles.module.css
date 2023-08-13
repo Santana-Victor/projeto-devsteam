@@ -1,12 +1,12 @@
 .input {
   background-color: var(--bg-input);
-  color: var(--txt-color);
+  color: var(--txt-color-primary);
   padding: 10px;
   outline: none;
 }
 
 .input::placeholder {
-  color: var(--color-placeholder);
+  color: var(--txt-color-tertiary);
   font-style: italic;
 }
 

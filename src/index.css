@@ -8,21 +8,16 @@
   --bg-button: #549300;
   --bg-button-hover: #518f00;
   --bg-game-card: #2983aa;
+  --bg-cart-menu: #364a63;
   --txt-fullprice: #a8a8a8;
   --txt-color-primary: #ffffff;
   --txt-color-secundary: #beeb14;
   --txt-color-tertiary: #c7c7c7;
+  --txt-color-quaternary: #f00f00;
 }
 
 body {
   background-color: #1b2838;
   color: var(--txt-color-primary);
   font-family: "Inter", sans-serif;
-}
-
-@media (max-width: 480px) {
-  .icon_cart {
-    width: 30px;
-    height: auto;
-  }
 }

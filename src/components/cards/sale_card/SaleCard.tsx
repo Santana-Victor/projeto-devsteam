@@ -1,9 +1,13 @@
 import styles from "./styles.module.css";
 
 import PriceCard from "../price_card/PriceCard";
-import Button from "../../forms/button/Button";
+import Button from "../../forms/buy_button/BuyButton";
+
+import { useCartStore } from "../../../store/use_cart_store/useCartStore";
 
 interface SaleCardProps {
+  id: number;
+  title: string;
   src: string;
   alt: string;
   width: number;
@@ -13,6 +17,8 @@ interface SaleCardProps {
 }
 
 export default function SaleCard({
+  id,
+  title,
   src,
   alt,
   width,
@@ -20,6 +26,10 @@ export default function SaleCard({
   discount,
   fullPrice,
 }: SaleCardProps) {
+  const {
+    actions: { addGame },
+  } = useCartStore();
+
   return (
     <div className={styles.sale_card}>
       <img
@@ -33,7 +43,24 @@ export default function SaleCard({
       <div className={styles.info}>
         <h3 className={styles.title}>Oferta exclusiva</h3>
         <PriceCard discount={discount} fullPrice={fullPrice} />
-        <Button fullWidth={true}>Adicionar ao carrinho</Button>
+        <Button
+          fullWidth={true}
+          onClick={() =>
+            addGame({
+              id: id,
+              title: title,
+              src: src,
+              alt: alt,
+              width: width,
+              height: height,
+              price: Number(
+                `${(fullPrice - (fullPrice * discount) / 100).toFixed(1)}0`
+              ),
+            })
+          }
+        >
+          Adicionar ao carrinho
+        </Button>
       </div>
     </div>
   );

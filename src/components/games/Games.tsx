@@ -9,6 +9,7 @@ export default function Games() {
     <div className={styles.games}>
       {informationsGames.map((game) => (
         <GameCard
+          id={game.id}
           title={game.title}
           src={game.src}
           alt={game.alt}

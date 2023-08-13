@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.image {
+  width: 62px;
+  height: 74px;
+  object-fit: contain;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.title {
+  color: var(--txt-color-primary);
+}
+
+.price {
+  color: var(--txt-color-secundary);
+}
+
+.remove {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--txt-color-quaternary);
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: right;
+}

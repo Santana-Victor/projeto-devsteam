@@ -13,7 +13,7 @@ export const informationsGames = [
     width: 305,
     height: 145,
     category: "Ação, estratégia, multijogador, Gratuito p/ Jogar.",
-    fullPrice: "Gratuito p/ jogar",
+    fullPrice: 99.9,
   },
   {
     id: 2,
@@ -53,6 +53,6 @@ export const informationsGames = [
     width: 460,
     height: 215,
     category: "Ação, Aventura, Gratuito p/ Jogar",
-    fullPrice: "Gratuito p/ jogar",
+    fullPrice: 99.9,
   },
 ];

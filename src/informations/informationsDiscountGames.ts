@@ -4,7 +4,7 @@ import Valorant from "../assets/products/valorant.jpg";
 
 export const informationsDiscountGames = [
   {
-    id: 1,
+    id: 20,
     title: "League of Legends",
     src: LeagueofLegends,
     alt: "League of Legends",
@@ -14,7 +14,7 @@ export const informationsDiscountGames = [
     fullPrice: 99.9,
   },
   {
-    id: 2,
+    id: 22,
     title: "Dota 2",
     src: Dota2,
     alt: "Dota 2",
@@ -24,7 +24,7 @@ export const informationsDiscountGames = [
     fullPrice: 99.9,
   },
   {
-    id: 3,
+    id: 24,
     title: "Valorant",
     src: Valorant,
     alt: "Valorant",
