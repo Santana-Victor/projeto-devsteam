@@ -1,24 +1,30 @@
 import styles from "./styles.module.css";
 
+import { useCartStore } from "../../store/use_cart_store/useCartStore";
+
 interface CartOptionProps {
+  id: number;
   src: string;
   alt: string;
   width: number;
   height: number;
   title: string;
   price: number;
-  onRemove: () => void;
 }
 
 export default function CartOption({
+  id,
   src,
   alt,
   width,
   height,
   title,
   price,
-  onRemove,
 }: CartOptionProps) {
+  const {
+    actions: { removeGame },
+  } = useCartStore();
+
   return (
     <div className={styles.container}>
       <img
@@ -34,7 +40,11 @@ export default function CartOption({
         <span className={styles.price}>
           R${price.toFixed(2).toString().replace(".", ",")}
         </span>
-        <button className={styles.remove} role={"banner"} onClick={onRemove}>
+        <button
+          className={styles.remove}
+          role={"banner"}
+          onClick={() => removeGame(id)}
+        >
           remover
         </button>
       </div>

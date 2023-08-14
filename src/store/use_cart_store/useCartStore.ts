@@ -31,10 +31,10 @@ export const useCartStore = create<StoreProps>((set) => ({
       set((state) => ({
         state: { cart: [...state.state.cart, info] },
       })),
-    removeGame: (pos) =>
+    removeGame: (id) =>
       set((state) => ({
         state: {
-          cart: state.state.cart.filter((obj, posOjb) => posOjb !== pos),
+          cart: state.state.cart.filter((obj) => obj.id !== id),
         },
       })),
   },

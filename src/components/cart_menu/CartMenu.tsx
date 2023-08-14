@@ -7,7 +7,6 @@ import { useCartStore } from "../../store/use_cart_store/useCartStore";
 export default function CartMenu() {
   const {
     state: { cart },
-    actions: { removeGame },
   } = useCartStore();
 
   return (
@@ -16,15 +15,15 @@ export default function CartMenu() {
         {cart.length === 0 && (
           <p className={styles.empty_cart}>Nenhum produto no seu carrinho.</p>
         )}
-        {cart.map((cartInfo, pos) => (
+        {cart.map((cartInfo) => (
           <CartOption
+            id={cartInfo.id}
             src={cartInfo.src}
             alt={cartInfo.alt}
             width={cartInfo.width}
             height={cartInfo.height}
             title={cartInfo.title}
             price={cartInfo.price}
-            onRemove={() => removeGame(pos)}
             key={cartInfo.id}
           />
         ))}
