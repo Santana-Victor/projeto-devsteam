@@ -17,6 +17,7 @@ export default function BuyButton({
         fullWidth ? `${styles.button} ${styles.full_width}` : `${styles.button}`
       }
       role={"button"}
+      aria-label={"Botão para adicionar um produto no carrinho de compras"}
       onClick={onClick}
     >
       {children}

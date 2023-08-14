@@ -18,6 +18,7 @@ export default function CartButton() {
       <button
         className={styles.cart_button}
         role={"button"}
+        aria-label={"Botão para abrir um menu flutuante"}
         onClick={() => {
           setOpen(!open);
         }}
